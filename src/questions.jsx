@@ -121,10 +121,11 @@ export default function Questions(props) {
         </button>
       )}
       {check && (
-        <div>
-          <h2>You scored {correctAnswers}/5 correct answers</h2>
-          <span></span>
-          <button onClick={props.t} className="check">
+        <div className="playagain">
+          <h2 className="score">
+            You scored {correctAnswers}/5 correct answers
+          </h2>
+          <button onClick={props.t} className="play">
             Play again
           </button>
         </div>
